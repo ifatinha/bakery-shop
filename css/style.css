@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css2?family=Ramaraja&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+body,
+div,
+h1,
+h2,
+h3,
+a,
+section,
+main,
+p,
+img,
+header,
+footer,
+nav,
+span {
+    margin    : 0;
+    padding   : 0;
+    box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+:target {
+    scroll-margin-top: .8em;
+  }
+
+:root {
+    --orange: rgb(245, 120, 74);
+    --black : rgb(0, 0, 0);
+    --gray  : rgb(232, 231, 230);
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Ramaraja', serif;
+}
+
+.flex {
+    display: flex;
+}
+
+header {
+    position  : fixed;
+    width     : 100%;
+    text-align: center;
+    padding   : 2%;
+}
+
+header nav a {
+    font-size: 1.5em;
+    color    : var(--black);
+    margin   : 1%;
+}
+
+header nav a:hover {
+    color: var(--orange);
+}
+
+main {
+    background-image   : url("../images/paper-bag-with-a-variety-of-bread.jpg");
+    background-repeat  : no-repeat;
+    background-size    : cover;
+    background-position: center;
+    height             : 100vh;
+}
+
+main .container {
+    width         : 50%;
+    height        : 100vh;
+    float         : right;
+    flex-direction: column;
+    padding-top   : 5%;
+}
+
+main .container h1 {
+    font-size   : 9em;
+    font-family : 'Abril Fatface', cursive;
+    font-weight : normal;
+    padding-left: 18%;
+}
+
+.texto-padrao {
+    text-transform: uppercase;
+    font-family   : 'Abril Fatface', cursive;
+}
+
+.container .texto-titulo {
+    margin-top    : -4%;
+    font-family   : 'Abril Fatface', cursive;
+    padding-left  : 22%;
+    letter-spacing: 5px;
+}
+
+.container .p1 {
+    font-size     : 5em;
+    margin-top    : 5%;
+    color         : var(--orange);
+    margin-bottom : -2%;
+    letter-spacing: 10px;
+    padding-left  : 18%;
+}
+
+.container .p2 {
+    font-size     : 2em;
+    line-height   : 32px;
+    padding-left  : 18%;
+    letter-spacing: 5px;
+}
+
+.container .container-textos {
+    margin-top : 5%;
+    margin-left: 10%;
+    width      : 80%;
+}
+
+.container-textos .p4 {
+    font-size     : 1.7em;
+    color         : var(--orange);
+    font-family   : 'Abril Fatface', cursive;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight   : 600;
+    margin-top    : 2%;
+}
+
+.titulos-section {
+    color         : var(--orange);
+    text-align    : center;
+    font-size     : 2.4em;
+    margin-bottom : 2%;
+    letter-spacing: 5px;
+}
+
+.section-about {
+    flex-direction: column;
+    margin        : 3% 0;
+    padding       : 2% 0;
+}
+
+.section-about img {
+    margin-right: 2%;
+}
+
+.section-about .description p {
+    font-size: 1.2em;
+    padding  : 3% 2% 0 2%;
+}
+
+.section-about .description img {
+    width : 100%;
+    height: 450px;
+}
+
+.section-products {
+    flex-direction: column;
+}
+
+.section-products .container-products {
+    flex-direction : row;
+    justify-content: space-around;
+    flex-wrap      : wrap;
+    padding        : 1%;
+}
+
+.container-products .card {
+    width         : 30%;
+    flex-direction: column;
+    margin        : 1%;
+    box-shadow    : 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius : 5px;
+}
+
+.container-products .card img {
+    width                  : 100%;
+    border-top-left-radius : 5px;
+    border-top-right-radius: 5px;
+    object-fit             : cover;
+}
+
+.card .card-description {
+    padding    : 2%;
+    flex-basis : auto;
+    flex-grow  : 1;
+    flex-shrink: 1;
+}
+
+.card .card-description p {
+    font-size: 1.2em;
+}
+
+.card .card-description h3 {
+    font-size     : 2em;
+    color         : var(--orange);
+    text-align    : center;
+    letter-spacing: 2px;
+}
+
+.card a {
+    background-color          : var(--orange);
+    width                     : 100%;
+    padding                   : 2%;
+    border-bottom-left-radius : 5px;
+    border-bottom-right-radius: 5px;
+    text-align                : center;
+    color                     : white;
+    font-size                 : 1.3em;
+    text-transform            : uppercase;
+    letter-spacing            : 2px;
+    cursor                    : pointer;
+}
+
+.card a:hover {
+    background-color: black;
+    color           : var(--orange);
+}
+
+.section-contact {
+    flex-direction: column;
+    align-items   : center;
+    padding       : 2%;
+    margin        : 3% 0;
+}
+
+.section-contact p {
+    font-size: 1.2em;
+}
+
+.section-contact a {
+    color: var(--orange);
+}
+
+.section-contact .contact-medial-social {
+    text-align: center;
+}
+
+.section-contact .img-contact {
+    width: 100%;
+}
+
+footer {
+    background-color: var(--orange);
+    padding         : 3%;
+    text-align      : center;
+    color           : var(--black);
+    font-size       : 1.3em;
+}
+
+@media screen and (max-width: 450px) {
+
+    header nav {
+        text-align: center;
+        width     : 100%;
+    }
+
+    main {
+        align-items        : center;
+        background         : linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7) 100%), url("/images/paper-bag-with-a-variety-of-bread.jpg");
+        background-size    : cover;
+        background-position: center;
+    }
+
+    main .container {
+        float          : none;
+        align-items    : center;
+        justify-content: center;
+        width          : 100%;
+        padding-right  : 15%;
+    }
+
+    .container .texto-titulo {
+        padding-left: 15%;
+    }
+
+    .container .p3 {
+        display: none;
+    }
+
+    .container .container-textos {
+        width     : 100%;
+        text-align: center;
+    }
+
+    .section-about .description {
+        flex-direction: column;
+        padding       : 2%;
+    }
+
+    .section-about .description img {
+        height: auto;
+    }
+
+    .section-about .description p {
+        font-size: 1em;
+    }
+
+    .section-products {
+        flex-direction: column;
+    }
+
+    .section-products .container-products {
+        flex-direction: column;
+        margin        : 2%;
+    }
+
+    .section-products .container-products .card {
+        width: 100%;
+    }
+
+    .section-contact {
+        text-align: center;
+    }
+
+    .titulos-section {
+        font-size: 1.8em;
+    }
+
+    footer p {
+        font-size: 0.8em;
+    }
+}
